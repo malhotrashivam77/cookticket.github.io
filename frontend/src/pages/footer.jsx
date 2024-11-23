@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Typography, Link, IconButton, Box } from '@mui/material';
 import { Facebook, Twitter, Instagram, LinkedIn, GitHub, Google } from '@mui/icons-material';
-import '../assets/styles/Footer.css'; // Assuming you will add styles for the footer here
+import '../assets/styles/footer.css'; // Assuming you will add styles for the footer here
 
 const Footer = () => {
   return (
