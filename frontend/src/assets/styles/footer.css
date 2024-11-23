@@ -1,36 +1,23 @@
 .footer {
-    background-color: rgb(241, 140, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgb(241, 140, 74) 0%, rgb(225, 100, 50) 50%, rgb(200, 60, 20) 100%);
     color: white;
-    padding: 3rem 1rem;
-    text-align: center;
-    margin-top: 4rem;
-    position: relative;
+    padding: 20px 0;
   }
   
-  .footer .MuiTypography-root {
-    color: white;
+  
+  .footer img {
+    max-width: 120px;
   }
   
-  .footer .MuiLink-root {
-    color: #000000;
+  .footer a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
   }
   
-  .footer .MuiLink-root:hover {
+  .footer a:hover {
     text-decoration: underline;
-  }
-  
-  .footer .MuiIconButton-root {
-    transition: color 0.3s ease;
-  }
-  
-  .footer .MuiIconButton-root:hover {
-    color: rgb(241, 140, 74);
-  }
-  
-  .footer .MuiTypography-body2 {
-    font-size: 1rem;
-    color: #ffffff;
   }
   

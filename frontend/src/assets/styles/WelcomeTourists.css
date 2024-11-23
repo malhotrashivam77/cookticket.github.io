@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     height: 50vh; /* Default for larger screens */
-    background-color: rgb(241, 140, 74);
+    background: linear-gradient(135deg, rgb(241, 140, 74) 0%, rgb(225, 100, 50) 50%, rgb(200, 60, 20) 100%);
     padding: 0 1rem;
   }
   
   .welcome-greeting {
-
+    color: #fff;
     margin-bottom: -20px;
   }
   .welcome-title {
