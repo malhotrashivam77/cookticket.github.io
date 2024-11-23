@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../src/assets/styles/WelcomeTourists.css';
+import '../assets/styles/WelcomeTourists.css';
 
 const WelcomeTourists = () => {
   return (

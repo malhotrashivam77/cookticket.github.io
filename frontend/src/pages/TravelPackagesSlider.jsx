@@ -4,10 +4,15 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../src/assets/styles/Slider.css';
 
+// Import images
+import charDhamImage from '../assets/images/cookticket_chardham.jpeg';
+import mussoorieImage from '../assets/images/cookticket_mussoorie.jpeg';
+import rishikeshImage from '../assets/images/cookticket_rishikesh.jpeg';
+
 const travelPackages = [
-  { id: 1, title: 'Char Dham', image: '../../src/assets/images/cookticket_chardham.jpeg', description: 'Embark on a divine journey through the sacred Chardham pilgrimage, where spirituality meets breathtaking Himalayan vistas.' },
-  { id: 2, title: 'Mussorie + Dhanaulti', image: '../../src/assets/images/cookticket_mussoorie.jpeg', description: 'Experience the serene charm of Mussoorie and the tranquil beauty of Dhanaulti, nestled in the heart of the Himalayas.' },
-  { id: 3, title: 'Rishikesh(Yoga Capital)', image: '../../src/assets/images/cookticket_rishikesh.jpeg', description: 'Dive into adventure and spirituality in Rishikesh, the Yoga Capital of the World.' },
+  { id: 1, title: 'Char Dham', image: charDhamImage, description: 'Embark on a divine journey through the sacred Chardham pilgrimage, where spirituality meets breathtaking Himalayan vistas.' },
+  { id: 2, title: 'Mussorie + Dhanaulti', image: mussoorieImage, description: 'Experience the serene charm of Mussoorie and the tranquil beauty of Dhanaulti, nestled in the heart of the Himalayas.' },
+  { id: 3, title: 'Rishikesh(Yoga Capital)', image: rishikeshImage, description: 'Dive into adventure and spirituality in Rishikesh, the Yoga Capital of the World.' },
 ];
 
 const TravelPackagesSlider = () => {
@@ -22,7 +27,7 @@ const TravelPackagesSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, 
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {

@@ -1,3 +1,5 @@
+
+
 .hero-section {
     min-height: 70vh;
     padding-top: 4rem; /* Space for fixed navbar */
@@ -9,7 +11,7 @@
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     background: no-repeat center/cover fixed; /* Ensures the image is centered and covers the section */
-    background-image: url('../../src/assets/images/hero1.jpeg');
+    background-image: url('../images/hero1.jpeg');
     position: relative; /* For scroll indicator positioning */
   }
   

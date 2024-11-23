@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/images/logo2_nonbg.png";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -160,7 +161,7 @@ const Navbar = () => {
               }}
             >
               <img
-                src="../../src/assets/images/logo2_nonbg.png"
+                src= {logo} // Replace with your own logo
                 alt="CookTicket Logo"
                 style={{ width: "40px", height: "auto", marginRight: "5px" }}
               />

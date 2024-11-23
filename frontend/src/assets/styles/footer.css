@@ -1,0 +1,36 @@
+.footer {
+    background-color: rgb(241, 140, 74);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+  }
+  
+  .footer .MuiTypography-root {
+    color: white;
+  }
+  
+  .footer .MuiLink-root {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer .MuiLink-root:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .MuiIconButton-root {
+    transition: color 0.3s ease;
+  }
+  
+  .footer .MuiIconButton-root:hover {
+    color: rgb(241, 140, 74);
+  }
+  
+  .footer .MuiTypography-body2 {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  

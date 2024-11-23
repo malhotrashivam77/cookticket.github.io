@@ -3,10 +3,10 @@ import Navbar from '../components/layout/Navbar';
 import AdminLoginModal from '../components/admin/AdminLoginModal';
 import { adminLogin } from '../services/api';
 import TravelPackagesSlider from './TravelPackagesSlider'; // Import the slider
-import '../../src/assets/styles/Hero.css';
+import '../assets/styles/Hero.css';
 import AboutUs from './AboutUs';
 import WelcomeTourists from './WelcomeTourists';
-
+import Footer from './footer';
 
 const HomePage = () => {
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
@@ -63,7 +63,7 @@ const HomePage = () => {
       <TravelPackagesSlider />
       <WelcomeTourists />
       <AboutUs />
-     
+     <Footer />
 
       {/* Admin Login Modal */}
       {/* <AdminLoginModal
