@@ -1,0 +1,181 @@
+/* Existing Slider styles */
+.travel-packages-slider {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin: 10px;
+}
+
+.travel-packages-slider h1 {
+    color: rgb(241, 140, 74);
+    text-align: center;
+}
+
+.package-card {
+    flex: 0 0 auto; /* Prevents the cards from shrinking or growing */
+    margin: 0; /* Avoid additional margins that affect alignment */
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-image {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.package-details {
+    padding: 1rem;
+}
+
+.package-title {
+    margin-top: -20px;
+    color: rgb(241, 140, 74);
+    margin-bottom: 0.5rem;
+}
+
+.package-description {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.slick-list {
+    display: flex !important; /* Ensures the slides are horizontally aligned */
+    overflow: hidden; /* Prevents extra content from showing */
+}
+
+.slick-track {
+    display: flex !important; /* Aligns the slides in a row */
+    gap: 15px; /* Adds spacing between the slides */
+}
+
+/* Slick Carousel overrides */
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Adds padding between slides */
+}
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #fff;
+    font-size: 16px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    color: rgb(241, 140, 74);
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: rgb(241, 140, 74);
+}
+
+/* Enquiry Button */
+.enquiry-button {
+    background-color: rgb(241, 140, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background-color: #f1a441;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #21202080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    color: rgb(241, 140, 74);
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.submit-button {
+    background-color: rgb(241, 140, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #f1a441;
+}

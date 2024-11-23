@@ -1,0 +1,76 @@
+.welcome-tourists-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Default for larger screens */
+    background-color: rgb(241, 140, 74);
+    padding: 0 1rem;
+  }
+  
+  .welcome-greeting {
+
+    margin-bottom: -20px;
+  }
+  .welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .welcome-tourists-page p {
+    font-size: 1.3rem;
+    margin-top: -20px;
+    text-align: center;
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    .welcome-tourists-page {
+      height: 60vh; /* Increase height for smaller screens */
+    }
+  
+    .welcome-title {
+      font-size: 2.5rem; /* Slightly smaller text for tablets */
+      padding: 1.5rem;
+    }
+  
+    .welcome-tourists-page p {
+      font-size: 1.2rem; /* Adjust paragraph size */
+      text-align: center;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .welcome-tourists-page {
+      height: 70vh; /* Adjust height further for small screens */
+    }
+  
+    .welcome-title {
+      font-size: 2rem; /* Smaller text for mobile */
+      padding: 1rem;
+    }
+  
+    .welcome-tourists-page p {
+      font-size: 1rem; /* Adjust paragraph size for mobile */
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width: 1200px) {
+    .welcome-tourists-page {
+      height: 50vh; /* Maintain original height for large screens */
+    }
+  
+    .welcome-title {
+      font-size: 3.5rem; /* Slightly larger title for large screens */
+      padding: 3rem;
+    }
+  }
+  
