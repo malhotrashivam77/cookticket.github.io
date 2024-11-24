@@ -1,0 +1,47 @@
+.services-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgb(241, 140, 74) 0%, rgb(225, 100, 50) 50%, rgb(200, 60, 20) 100%);
+  }
+  
+  .section-title {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Fixed height for uniform cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-image {
+    flex-shrink: 0;
+  }
+  
+  .service-card .MuiTypography-h6 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .service-card .MuiButtonBase-root {
+    border-radius: 0;
+    background: #f18c4a;
+    color: white;
+  }
+  
+  .service-card .MuiButtonBase-root:hover {
+    background: linear-gradient(135deg, rgb(241, 140, 74) 0%, rgb(225, 100, 50) 50%, rgb(200, 60, 20) 100%);
+  }
+  

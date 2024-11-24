@@ -1,0 +1,27 @@
+.explore-destinations {
+    padding: 4rem 0;
+    background: #ffffff; /* Light beige background for a travel theme */
+  }
+  
+  .section-title {
+    margin-bottom: 2rem;
+    color: #f18c4a;
+    font-weight: bold;
+  }
+  
+  .destination-card {
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-media {
+    object-fit: cover;
+  }
+  
+  .destination-card .MuiCardContent-root {
+    padding: 1rem;
+    background: #fff;
+  }
+  

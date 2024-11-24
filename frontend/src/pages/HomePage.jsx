@@ -7,6 +7,8 @@ import '../assets/styles/Hero.css';
 import AboutUs from './AboutUs';
 import WelcomeTourists from './WelcomeTourists';
 import Footer from './footer';
+import ServicesPage from './ServicesPage';
+import ExploreDestinations from './ExploreDestinations';
 
 const HomePage = () => {
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
@@ -62,7 +64,10 @@ const HomePage = () => {
       {/* Travel Packages Slider */}
       <TravelPackagesSlider />
       <WelcomeTourists />
+    
       <AboutUs />
+      <ServicesPage />
+      <ExploreDestinations />
      <Footer />
 
       {/* Admin Login Modal */}

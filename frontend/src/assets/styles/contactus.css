@@ -1,0 +1,37 @@
+.contact-us-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f18c4a, #f6b78b);
+    color: #ffffff;
+  }
+  
+  .contact-us-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .contact-us-subtitle {
+    margin-bottom: 2rem;
+    color: #ffeedd;
+  }
+  
+  .contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form .MuiTextField-root {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form .MuiButton-root {
+    background: #f18c4a;
+    color: white;
+  }
+  
+  .contact-form .MuiButton-root:hover {
+    background: #d3763b;
+  }
+  
