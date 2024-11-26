@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 3rem 1rem;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
   }
   
   .about-us-content {
@@ -33,11 +33,11 @@
     justify-content: center;
   }
   
-  .about-us-image img {
+  /* .about-us-image img {
     max-width: 80%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  } */
   
   /* Responsive design */
   @media (max-width: 768px) {
@@ -51,6 +51,10 @@
   
     .about-us-image img {
       max-width: 100%;
+    }
+    .about-us-page{
+      display: flex;
+      flex-direction: column !important;
     }
   }
   

@@ -3,12 +3,12 @@
     background: #ffffff; /* Light beige background for a travel theme */
   }
   
-  .section-title {
+  .services-section-title {
     margin-bottom: 2rem;
-    color: #f18c4a;
+    color: #f18c4a !important;
     font-weight: bold;
   }
-  
+
   .destination-card {
     margin: 0 10px;
     border-radius: 8px;

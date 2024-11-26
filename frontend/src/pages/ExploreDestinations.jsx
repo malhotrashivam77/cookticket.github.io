@@ -63,7 +63,7 @@ const ExploreDestinations = () => {
 
     return (
         <section className="explore-destinations">
-            <Typography variant="h4" align="center" gutterBottom className="section-title">
+            <Typography variant="h4" align="center" gutterBottom className="services-section-title">
                 Explore Destinations with Us
             </Typography>
             <Slider {...sliderSettings}>
