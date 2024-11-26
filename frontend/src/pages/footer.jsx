@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Link, IconButton, Box } from '@mui/material';
 import { Facebook, Twitter, Instagram, Google } from '@mui/icons-material';
 import '../assets/styles/footer.css'; // Assuming you will add styles for the footer here
-import logo from '../assets/images/white_logo_nonbg.png';
+import logo from '../assets/images/new_logo_white.png';
 // @ts-ignore
 import Grid from '@mui/material/Grid';
 
@@ -11,27 +11,14 @@ const Footer = () => {
     <footer className="footer" style={{ backgroundColor: '#FF7043', padding: '20px 0', color: 'white', display: 'flex', justifyContent: 'space-between' }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center">
-          {/* Left Side - Logo */}
+          {/* Left Side - Logo and Social Media Icons */}
           <Grid item xs={12} sm={4}>
-            <Box display="flex" justifyContent="center" alignItems="center" height="100%" >
-              <img src={logo} alt="CookTicket Logo" style={{ maxWidth: '250px' }} />
-            </Box>
-          </Grid>
-
-          {/* Right Side - Contact Details and Social Media Icons */}
-          <Grid item xs={12} sm={8}>
-            <Box
-              display="flex"
-              flexDirection="column"
-              alignItems={{ xs: 'center', sm: 'flex-end' }}
-              justifyContent="space-between"
-              height="100%"
-            >
-              {/* Contact Information */}
-              
+            <Box display="flex" flexDirection="column" alignItems="center" height="100%">
+              {/* Logo */}
+              <img src={logo} alt="CookTicket Logo" style={{ maxWidth: '300px', marginBottom: '-100px', marginTop: '-80px' }} />
 
               {/* Social Media Icons */}
-              <Box mb={2} display="flex" justifyContent={{ xs: 'center', sm: 'flex-start' }} >
+              <Box display="flex" justifyContent="center" mt={2}>
                 <IconButton href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <Facebook sx={{ color: 'white', fontSize: 38 }} />
                 </IconButton>
@@ -45,7 +32,19 @@ const Footer = () => {
                   <Instagram sx={{ color: 'white', fontSize: 38 }} />
                 </IconButton>
               </Box>
+            </Box>
+          </Grid>
 
+          {/* Right Side - Contact Details */}
+          <Grid item xs={12} sm={8}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              alignItems={{ xs: 'center', sm: 'flex-end' }}
+              justifyContent="space-between"
+              height="100%"
+            >
+              {/* Contact Information */}
               <Box textAlign={{ xs: 'center', sm: 'left' }}>
                 <Typography variant="h5" gutterBottom fontWeight={600} fontSize={{ xs: '1rem', sm: '2.0rem' }}>
                   Contact Information

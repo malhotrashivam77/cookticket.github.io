@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/images/logo2_nonbg.png";
+import logo from "../../assets/images/new_logo.png";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,14 +33,15 @@ const Navbar = () => {
 }
 
 .mobile-menu {
-  display: block;
-  width: 90%;
+  display: flex; /* Changed to flex for layout control */
+  flex-direction: column; /* Ensures items are displayed in a column */
+  align-items: flex-start; /* Align items to the left */
+  width: 100%; /* Full width of the parent container */
   position: absolute;
   top: 100%;
   left: 0;
-  right: 0;
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem; /* Spacing for better appearance */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transform-origin: top;
@@ -60,22 +61,35 @@ const Navbar = () => {
 }
 
 .nav-link {
-  display: block;
+  display: inline-block; /* Ensures the element only spans the width of the text */
   font-weight: 600;
   color: rgb(241, 140, 74) !important;
   text-decoration: none !important;
-  padding: 0.75rem 0rem;
+  padding: 0.50rem 0rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
-  width: 100%;
-  text-align: left;
   font-size: 1.2rem;
+  position: relative; /* Required for the ::after pseudo-element */
 }
 
-.nav-link:hover {
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts the distance of the underline from the text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
   background-color: rgb(241, 140, 74);
-  color: white !important;
+  transition: width 0.3s ease; /* Smooth transition for the underline */
 }
+
+.nav-link:hover::after {
+  width: 100%; /* Expands the underline to the full width of the text on hover */
+}
+
+// .nav-link:hover {
+//   color: white !important; /* Changes text color on hover */
+// }
 
 .admin-btn {
   background-color: rgb(241, 140, 74) !important;
@@ -98,7 +112,7 @@ const Navbar = () => {
   border: none;
   color: rgb(241, 140, 74);
   cursor: pointer;
-  padding: 1.0rem;
+  padding: 3.0rem;
 }
 
 .menu-button:focus {
@@ -126,7 +140,7 @@ const Navbar = () => {
   .desktop-menu {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1;
   }
 
   .nav-link {
@@ -163,9 +177,9 @@ const Navbar = () => {
               <img
                 src= {logo} // Replace with your own logo
                 alt="CookTicket Logo"
-                style={{ width: "40px", height: "auto", marginRight: "5px" }}
+                style={{ width: "150px", height: "auto", marginRight: "3px", marginTop: "20px", marginLeft: "-20px" }}
               />
-              COOKTICKET
+              {/* COOKTICKET */}
             </div>
 
             {/* Desktop Menu */}
@@ -180,14 +194,17 @@ const Navbar = () => {
                 Ticket Booking
               </a>
               <a href="#" className="nav-link">
+                Visa service
+              </a>
+              <a href="#" className="nav-link">
                 About Us
               </a>
-              <button
+              {/* <button
                 onClick={() => navigate("/admin/login")}
                 className="admin-btn"
               >
                 Admin Login
-              </button>
+              </button> */}
             </div>
 
             {/* Mobile Menu Button */}
@@ -196,7 +213,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={30} /> : <Menu size={30} />}
             </button>
           </div>
 
@@ -214,7 +231,7 @@ const Navbar = () => {
             <a href="#" className="nav-link">
               About Us
             </a>
-            <button
+            {/* <button
               onClick={() => {
                 navigate("/admin/login");
                 setIsOpen(false);
@@ -222,7 +239,7 @@ const Navbar = () => {
               className="admin-btn"
             >
               Admin Login
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
