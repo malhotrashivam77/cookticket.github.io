@@ -1,0 +1,67 @@
+.visa-services-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .visa-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .visa-dropdowns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  .dropdown {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+  }
+  
+  .enquiry-button {
+    background-color: #f18c4a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enquiry-button:hover {
+    background-color: #f18c4a;
+  }
+  
+  .why-choose-us {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .choose-us-list li {
+    margin: 8px 0;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  

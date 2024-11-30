@@ -1,4 +1,4 @@
-/* Existing Slider styles */
+/* General Slider Styles */
 .travel-packages-slider {
     background-color: #f8f9fa;
     padding: 2rem 1rem;
@@ -8,12 +8,21 @@
 .travel-packages-slider h1 {
     color: rgb(241, 140, 74);
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .package-card {
-    flex: 0 0 auto; /* Prevents the cards from shrinking or growing */
-    margin: 0; /* Avoid additional margins that affect alignment */
+    flex: 0 0 auto;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.package-card img {
+    border-radius: 20px;    
+}
+
 
 .package-card:hover {
     transform: scale(1.05);
@@ -22,7 +31,7 @@
 
 .package-image {
     width: 90%;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     height: 200px;
     object-fit: cover;
@@ -34,8 +43,9 @@
 }
 
 .package-title {
-    margin-top: -20px;
+    margin-top: -10px;
     color: rgb(241, 140, 74);
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -46,33 +56,25 @@
 }
 
 .slick-list {
-    display: flex !important; /* Ensures the slides are horizontally aligned */
-    overflow: hidden; /* Prevents extra content from showing */
+    display: flex !important;
+    overflow: hidden;
 }
 
 .slick-track {
-    display: flex !important; /* Aligns the slides in a row */
-    gap: 15px; /* Adds spacing between the slides */
-}
-
-/* Slick Carousel overrides */
-.slick-slide {
     display: flex !important;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px; /* Adds padding between slides */
+    gap: 15px;
 }
 
 .slick-prev, .slick-next {
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(241, 140, 74);
     border-radius: 50%;
     z-index: 1;
 }
 
 .slick-prev:hover, .slick-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(241, 140, 74);
 }
 
 .slick-prev:before, .slick-next:before {
@@ -117,7 +119,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #21202080;
+    background: rgba(33, 32, 32, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,45 +128,144 @@
 
 /* Modal Content */
 .modal-content {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 8px;
-    width: 400px;
-    max-width: 90%;
-    color: rgb(241, 140, 74);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    max-width: 95%;
+    color: #c9c9c9 !important;
+    position: relative;
 }
 
 .modal-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #f18c4a;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
+.modal-content .form-group label {
     font-size: 14px;
+    font-weight: 600;
+    color: #555;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
-.form-group input,
-.form-group select {
-    display: flex;
-    justify-content: center;
+.modal-content .form-group input,
+.modal-content .form-group select,
+.modal-content .form-group textarea {
     width: 90%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #000000;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
     color: #000000;
-    background-color: #ffffff;
+    transition: all 0.3s ease;
+    background-color: unset;
+    margin-right: 20px;
 }
 
-.submit-button {
+.modal-content .form-group input:focus,
+.modal-content .form-group select:focus,
+.modal-content .form-group textarea:focus {
+    border-color: #f18c4a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(241, 140, 74, 0.5);
+}
+
+.modal-content textarea {
+    resize: none;
+    height: 100px;
+}
+
+.modal-content .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modal-content .form-actions button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content .form-actions .whatsapp-button {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.modal-content .form-actions .whatsapp-button:hover {
+    background-color: #1da54e;
+}
+
+.modal-content .form-actions .call-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal-content .form-actions .call-button:hover {
+    background-color: #0056b3 !important;
+}
+
+.modal-content .form-actions .submit-button {
+    background-color: #f18c4a;
+    color: white;
+}
+
+.modal-content .form-actions .submit-button:hover {
+    background-color: #d46c32;
+}
+
+/* Close Button */
+.modal-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.modal-content .close-button:hover {
+    color: #555;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-content .form-actions button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+.submit-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.submit-form button {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(241, 140, 74);
     color: white;
     border: none;
@@ -172,10 +273,11 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
+    margin: 20px;
 }
 
-.submit-button:hover {
-    background-color: #f1a441;
+.form-group {
+    margin-bottom: 10px;
 }

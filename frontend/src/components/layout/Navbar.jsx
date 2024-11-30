@@ -190,10 +190,13 @@ const Navbar = () => {
               <a href="#" className="nav-link">
                 Packages
               </a>
-              <a href="#" className="nav-link">
+              <a href="/flight-booking#" className="nav-link">
                 Ticket Booking
               </a>
-              <a href="#" className="nav-link">
+              <a href="/hotel-booking" className="nav-link">
+                Hotel Booking
+              </a>
+              <a href="/visa-services" className="nav-link">
                 Visa service
               </a>
               <a href="#" className="nav-link">
@@ -219,15 +222,21 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className={`mobile-menu ${isOpen ? "visible" : "hidden"}`}>
-            <a href="#" className="nav-link">
+            <a href="/" className="nav-link">
               Home
             </a>
             <a href="#" className="nav-link">
               Packages
             </a>
-            <a href="#" className="nav-link">
+            <a href="/flight-booking" className="nav-link">
               Ticket Booking
             </a>
+            <a href="/hotel-booking" className="nav-link">
+                Hotel Booking
+              </a>
+            <a href="/visa-services" className="nav-link">
+                Visa service
+              </a>
             <a href="#" className="nav-link">
               About Us
             </a>
