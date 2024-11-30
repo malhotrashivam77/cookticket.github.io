@@ -372,7 +372,7 @@ const HotelBookingPage = () => {
                 mb: 4 
               }}
             >
-              Why Choose CookHotel?
+              Why Choose COOKTICKET?
             </Typography>
             <Grid container spacing={4}>
               <Grid item xs={12} md={4}>

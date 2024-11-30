@@ -364,7 +364,7 @@ const FlightBookingPage = () => {
                 mb: 4 
               }}
             >
-              Why Choose CookTicket?
+              Why Choose COOKTICKET
             </Typography>
             <Grid container spacing={4}>
               <Grid item xs={12} md={4}>

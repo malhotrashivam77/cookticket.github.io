@@ -184,7 +184,7 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="desktop-menu">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 Home
               </a>
               <a href="#" className="nav-link">
@@ -199,8 +199,8 @@ const Navbar = () => {
               <a href="/visa-services" className="nav-link">
                 Visa service
               </a>
-              <a href="#" className="nav-link">
-                About Us
+              <a href="/contactus" className="nav-link">
+                Contact Us
               </a>
               {/* <button
                 onClick={() => navigate("/admin/login")}
@@ -237,8 +237,8 @@ const Navbar = () => {
             <a href="/visa-services" className="nav-link">
                 Visa service
               </a>
-            <a href="#" className="nav-link">
-              About Us
+            <a href="/contactus" className="nav-link">
+              Contact Us
             </a>
             {/* <button
               onClick={() => {

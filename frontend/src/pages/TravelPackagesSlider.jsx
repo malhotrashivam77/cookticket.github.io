@@ -32,7 +32,7 @@ const travelPackages = [
 ];
 
 // Constant for contact details
-const CONTACT_NUMBER = '+911234567890';
+const CONTACT_NUMBER = '+917500068589';
 
 const TravelPackagesSlider = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
