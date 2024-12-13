@@ -1,0 +1,14 @@
+/* BackgroundSlider.css */
+.background-slider {
+    position: relative;
+    min-height: 70vh; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+  }

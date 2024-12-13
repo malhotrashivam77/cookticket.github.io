@@ -1,19 +1,36 @@
 
 
 .hero-section {
-    min-height: 70vh;
-    padding-top: 4rem; /* Space for fixed navbar */
-    border-radius: 20px;
-    margin: 0 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    background: no-repeat center/cover fixed; /* Ensures the image is centered and covers the section */
-    background-image: url('../images/hero1.jpeg');
-    position: relative; /* For scroll indicator positioning */
-  }
+  min-height: 70vh;
+  padding-top: 4rem; /* Space for fixed navbar */
+  border-radius: 20px;
+  margin: 0 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-image: url('../images/bg11.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* For positioning pseudo-element */
+  z-index: 1; /* To keep content above the overlay */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.377); /* Black transparent overlay */
+  border-radius: 20px; /* Match border radius of hero-section */
+  z-index: -1; /* Ensure it is behind the content */
+}
+
+
   
   /* Hero content animation */
   .hero-content {
@@ -267,6 +284,9 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../images/mb-1.jpg');
+  }
   .packages-section {
     padding: 2rem 1rem;
   }

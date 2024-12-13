@@ -9,6 +9,8 @@ import WelcomeTourists from './WelcomeTourists';
 import Footer from './footer';
 import ServicesPage from './ServicesPage';
 import ExploreDestinations from './ExploreDestinations';
+// import BackgroundSlider from './BackgroundSlider';
+
 
 const HomePage = () => {
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
@@ -28,7 +30,7 @@ const HomePage = () => {
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}
       <Navbar onAdminClick={() => setIsAdminModalOpen(true)} />
-
+      {/* <BackgroundSlider /> */}
       {/* Hero Section */}
       <section className="hero-section flex items-center justify-center text-white relative">
         <div className="hero-content text-center px-4">

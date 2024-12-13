@@ -7,6 +7,8 @@ import VisaServicesPage from './pages/VisaServicesPage';
 import FlightBookingPage from './pages/FlightTicketBooking';
 import HotelBookingPage from './pages/HotelBooking';
 import ContactUs from './pages/contactus';
+import BackgroundSlider from './pages/BackgroundSlider';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/visa-services" element={<VisaServicesPage />} /> 
           <Route path="/flight-booking" element={<FlightBookingPage />} />
           <Route path="/hotel-booking" element={<HotelBookingPage />} />
+          <Route path="/background-slider" element={<BackgroundSlider />} />
         </Routes>
       </div>
     </Router>
