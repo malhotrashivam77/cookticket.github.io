@@ -286,6 +286,7 @@
 @media (max-width: 768px) {
   .hero-section {
     background-image: url('../images/mb-1.jpg');
+    margin: 4px;
   }
   .packages-section {
     padding: 2rem 1rem;

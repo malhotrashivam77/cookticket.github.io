@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/new_logo.png";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate();
-  
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
 
   return (
     <>
@@ -112,7 +112,8 @@ const Navbar = () => {
   border: none;
   color: rgb(241, 140, 74);
   cursor: pointer;
-  padding: 3.0rem;
+  padding-right: 4rem;
+    margin-top: 25px;
 }
 
 .menu-button:focus {
@@ -175,7 +176,7 @@ const Navbar = () => {
               }}
             >
               <img
-                src= {logo} // Replace with your own logo
+                src={logo} // Replace with your own logo
                 alt="CookTicket Logo"
                 style={{ width: "150px", height: "auto", marginRight: "3px", marginTop: "20px", marginLeft: "-20px" }}
               />
@@ -232,11 +233,11 @@ const Navbar = () => {
               Ticket Booking
             </a>
             <a href="/hotel-booking" className="nav-link">
-                Hotel Booking
-              </a>
+              Hotel Booking
+            </a>
             <a href="/visa-services" className="nav-link">
-                Visa service
-              </a>
+              Visa service
+            </a>
             <a href="/contactus" className="nav-link">
               Contact Us
             </a>
